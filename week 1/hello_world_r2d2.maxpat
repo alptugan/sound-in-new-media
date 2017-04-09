@@ -38,13 +38,69 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 796.0, 147.0, 143.0, 74.0 ],
+					"presentation_rect" : [ 473.0, 151.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Whenever metro send a bang random object generates a freqency between 150 and 4000 Hz"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 460.0, 174.0, 89.0, 87.0 ],
+					"presentation_rect" : [ 669.0, 238.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "trigger bang in every 150 ms\nor set it dynamically via slider above"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 127.0, 278.0, 89.0, 47.0 ],
+					"presentation_rect" : [ 127.0, 281.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "cycle~ object to generate sound"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 185.0, 219.0, 150.0, 33.0 ],
+					"presentation_rect" : [ 185.0, 218.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Set the frequency vaule with message box"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "slider",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 642.0, 180.5, 156.0, 27.0 ],
+					"patching_rect" : [ 433.0, 117.5, 156.0, 27.0 ],
 					"style" : ""
 				}
 
@@ -56,8 +112,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 596.0, 182.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 593.0, 182.0, 0.0, 0.0 ],
+					"patching_rect" : [ 387.0, 118.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -69,7 +124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 596.0, 238.0, 65.0, 22.0 ],
+					"patching_rect" : [ 387.0, 174.0, 65.0, 22.0 ],
 					"style" : "",
 					"text" : "metro 150"
 				}
@@ -82,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 385.0, 200.0, 41.0, 22.0 ],
+					"patching_rect" : [ 708.0, 193.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "+ 150"
 				}
@@ -95,7 +150,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 361.0, 118.0, 24.0, 24.0 ],
+					"patching_rect" : [ 684.0, 111.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -107,9 +162,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 385.0, 246.0, 50.0, 22.0 ],
+					"patching_rect" : [ 708.0, 239.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "2371"
+					"text" : "3386"
 				}
 
 			}
@@ -120,7 +175,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 385.0, 154.0, 81.0, 22.0 ],
+					"patching_rect" : [ 708.0, 147.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "random 4000"
 				}
@@ -134,7 +189,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.0, 43.0, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "Frekansları set eder"
+					"text" : "Set the frequency vaule"
 				}
 
 			}
@@ -147,7 +202,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 36.0, 136.0, 72.0, 22.0 ],
 					"style" : "",
-					"text" : "2371"
+					"text" : "3386"
 				}
 
 			}
@@ -174,21 +229,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 116.0, 346.0, 89.0, 20.0 ],
+					"patching_rect" : [ 241.0, 348.0, 131.0, 20.0 ],
 					"style" : "",
-					"text" : "Sound On / Off"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 188.0, 220.0, 150.0, 20.0 ],
-					"style" : "",
-					"text" : "Frekansları set eder"
+					"text" : "1 - Sound On / Off"
 				}
 
 			}
@@ -272,6 +315,16 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 396.5, 296.0, 622.0, 296.0, 622.0, 100.0, 693.5, 100.0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -347,7 +400,7 @@
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 394.5, 270.0, 348.0, 270.0, 348.0, 111.0, 27.0, 111.0, 27.0, 69.0, 51.5, 69.0 ],
+					"midpoints" : [ 717.5, 318.0, 348.0, 318.0, 348.0, 111.0, 27.0, 111.0, 27.0, 69.0, 51.5, 69.0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
