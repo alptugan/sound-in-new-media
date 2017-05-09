@@ -28,3 +28,6 @@ Sound synthesis ADSR (attack-decay-sustain-release) filtering with a different a
 **2_1-basic_javascript_embedding.zip** Demonstrates how to use Javascript in MAX patches.
 
 **2_2-fetch_dynamic_content_as_XML.zip** Demonstrates receiving a dynamic XML file from a web service, loading into dict object, parsing with Javascript JS object and filtering data via route object.
+
+### week 12
+Final Projects - supervising
